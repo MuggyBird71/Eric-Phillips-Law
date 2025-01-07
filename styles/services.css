@@ -1,0 +1,19 @@
+#services {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  #services h1 {
+    font-size: 2rem;
+  }
+  
+  #services ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #services ul li {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+  

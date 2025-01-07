@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Law Firm Website</title>
+  <link rel="stylesheet" href="styles/header-footer.css">
+  <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Law Firm</div>
+      <button class="hamburger">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="fade-in">
+      <div class="hero-content">
+        <h1>Legal Excellence at Your Service</h1>
+        <p>Dedicated to solving your legal challenges.</p>
+        <a href="services.html" class="btn">Explore Services</a>
+      </div>
+    </section>
+
+    <section id="about" class="fade-in">
+      <h1>Welcome to Eagle Rock Design LLC</h1>
+      <p>Welcome to [Your Law Firm Name], where we are dedicated to providing exceptional legal services tailored to your needs.</p>
+    </section>
+
+    <section id="testimonials" class="fade-in">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial">
+        <p>"The best legal advice I've ever received."</p>
+        <span>- John Doe</span>
+      </div>
+      <div class="testimonial">
+        <p>"Highly professional and reliable service."</p>
+        <span>- Jane Smith</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Eagle Rock Design LLC. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling and mobile navigation
+    document.querySelector('.hamburger').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+
+    document.addEventListener('scroll', () => {
+      const elements = document.querySelectorAll('.fade-in');
+      elements.forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight) {
+          el.style.opacity = 1;
+          el.style.transform = 'translateY(0)';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
