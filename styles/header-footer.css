@@ -10,6 +10,9 @@
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body height fills the viewport */
   }
   
   main {
@@ -88,6 +91,11 @@
     color: white;
     cursor: pointer;
   }
+
+  /* Content Wrapper Fills Remaining Space */
+.content {
+    flex: 1;
+  }
   
   /* Footer */
   footer {
@@ -95,6 +103,7 @@
     color: white;
     text-align: center;
     padding: 1rem;
+    flex-shrink: 0; /* Prevent footer from shrinking */
   }
   
   @media (max-width: 768px) {
