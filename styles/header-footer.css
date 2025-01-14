@@ -104,6 +104,11 @@
     text-align: center;
     padding: 1rem;
     flex-shrink: 0; /* Prevent footer from shrinking */
+    position:fixed; /* Sets footer at the bottom of the page */
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
   }
   
   @media (max-width: 768px) {
